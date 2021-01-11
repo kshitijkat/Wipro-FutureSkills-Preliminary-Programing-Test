@@ -1,0 +1,47 @@
+Lang-Java
+
+
+
+
+
+public static String findStringVowelFirstAndLast(int input1, String[] input2){
+        
+      
+      String result = "";
+      
+      if(input1 == 0){
+          return "no matches found";
+      }
+      
+      for(int i = 0;i<input1;i++){
+          if(isaVowel(input2[i].charAt(0))){
+              
+              if(isaVowel(input2[i].charAt(input2[i].length()-1))){
+                  result+= input2[i];
+              }
+              
+          }
+      }
+      
+      if(result.length()==0){
+          return "no matches found";
+      }
+      
+      
+      return result.toLowerCase();
+        
+      
+    }
+    
+    
+    public static boolean isaVowel(char c){
+        char[] carr = {'a','e','i','o','u','A','E','I','O','U'};
+        
+        for(int i = 0; i<carr.length;i++){
+            if(carr[i] == c){
+                return true;
+            }
+        }
+        
+        return false;
+    }
