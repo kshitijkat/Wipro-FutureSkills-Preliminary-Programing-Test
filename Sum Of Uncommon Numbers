@@ -1,0 +1,53 @@
+Language-JAVA
+
+
+public int sumOfUncommonNumber(int[] input1, int[] input2) {
+
+      
+      int sum = 0;
+       
+       
+       for(int i = 0;i<input1.length;i++){
+           int found = 0;
+           for(int j = 0;j<input2.length;j++){
+               if(input1[i] == input2[j]){
+                   found = 1;
+               }
+           }
+           
+           if(found == 0){
+               sum+= (int)input1[i];
+           }
+       }
+       
+       
+       
+       for(int i = 0;i<input2.length;i++){
+           int found = 0;
+           for(int j = 0;j<input1.length;j++){
+               if(input2[i] == input1[j]){
+                   found = 1;
+               }
+           }
+           
+           if(found == 0){
+               sum+= (int)input2[i];
+           }
+       }
+       
+       while(sum/10!=0){
+           
+           int temp = sum;
+           sum = 0;
+           while(temp!=0){
+               sum+= temp%10;
+               temp = temp/10;
+           }
+           
+           
+       }
+        
+        return sum;
+        
+
+    }
