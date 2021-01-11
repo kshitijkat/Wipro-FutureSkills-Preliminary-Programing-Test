@@ -2,8 +2,8 @@
 
 ## List of Programs:-
 
-Find Key
+1-Find Key
 
-Find String Vowel First And Last
+2-Find String Vowel First And Last
 
-Sum Of Uncommon Numbers
+3-Sum Of Uncommon Numbers
