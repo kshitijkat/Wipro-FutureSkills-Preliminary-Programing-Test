@@ -9,3 +9,5 @@
 3-Sum Of Uncommon Numbers
 
 4-Find Chars Or Digit Sum
+
+5-Min find key
