@@ -7,3 +7,5 @@
 2-Find String Vowel First And Last
 
 3-Sum Of Uncommon Numbers
+
+4-Find Chars Or Digit Sum
